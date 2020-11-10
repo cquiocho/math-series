@@ -1,8 +1,9 @@
-from math_series.math_series import fibonacci
+from math_series.math_series import fibonacci, lucas
 
 
 def test_import():
     assert fibonacci
+    assert lucas
 
 def test_fibonacci_0():
     actual = fibonacci(0)
@@ -23,9 +24,3 @@ def test_fibonacci_3():
     actual = fibonacci(3)
     expected = 2
     assert actual == expected
-
-
-from math_series.math_series import lucas
-
-def test_import():
-    assert fibonacci
